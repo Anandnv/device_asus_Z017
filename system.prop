@@ -3,3 +3,6 @@ ro.sf.lcd_density=320
 
 # Set min freq
 ro.min_freq_0=400000
+
+# Optimal dex2oat threads for faster app installation
+ ro.sys.fw.dex2oat_thread_count=6
