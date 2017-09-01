@@ -40,6 +40,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/asus/Z010D/audio/mixer_paths_mtp.xml:system/etc/mixer_paths_mtp.xml
 
+#fuckin grelloc
+PRODUCT_COPY_FILES += \
+   device/asus/Z010D/hw/gralloc.msm8916.so:system/vendor/lib/hw/gralloc.msm8916.so \
+   device/asus/Z010D/hw/hwcomposer.msm8916.so:system/vendor/lib/hw/hwcomposer.msm8916.so
+
+
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.fusion.magfield.max=250
@@ -48,11 +54,11 @@ PRODUCT_PACKAGES += \
     WCNSS_qcom_wlan_nv.bin
 
 # Z010DD
-PRODUCT_COPY_FILES += \
-    device/asus/Z010D/Z010DD/kernel/boot.img:install/bin/boot.img
+#PRODUCT_COPY_FILES += \
+ #   device/asus/Z010D/Z010DD/kernel/boot.img:install/bin/boot.img
 
-PRODUCT_COPY_FILES += \
-    device/asus/Z010D/Z010DD/etc/prima/WCNSS_cfg.dat:install/bin/etc/firmware/wlan/prima/WCNSS_cfg.dat \
-    device/asus/Z010D/Z010DD/etc/prima/WCNSS_qcom_wlan_nv.bin:install/bin/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
-    device/asus/Z010D/Z010DD/etc/wifi/WCNSS_qcom_cfg.ini:install/bin/etc/wifi/WCNSS_qcom_cfg.ini
+#PRODUCT_COPY_FILES += \
+  #  device/asus/Z010D/Z010DD/etc/prima/WCNSS_cfg.dat:install/bin/etc/firmware/wlan/prima/WCNSS_cfg.dat \
+   # device/asus/Z010D/Z010DD/etc/prima/WCNSS_qcom_wlan_nv.bin:install/bin/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
+    #device/asus/Z010D/Z010DD/etc/wifi/WCNSS_qcom_cfg.ini:install/bin/etc/wifi/WCNSS_qcom_cfg.ini
 
