@@ -66,8 +66,19 @@ static int read_file2(const char *fname, char *data, int max_size)
 
     fd = open(fname, O_RDONLY);
     if (fd < 0) {
+        ("failed to open '%s'\n", fname);
         return 0;
     }
+
+    rc = read(fd, data, max_size - 1);
+    if ((rc > 0) && (rc < max_size))
+	data[rc] = '\0';
+    else
+	data[0] = '\0';
+    close(fd);
+
+    return 1;
+}
 
 static void init_alarm_boot_properties()
 {
@@ -171,5 +182,4 @@ void vendor_load_properties()
         property_set("ro.product.model", "Zenfone"); // this should never happen.
     }
 
-    INFO("Setting build properties for %s device of %s family\n", device, family);
 }
