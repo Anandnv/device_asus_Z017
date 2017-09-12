@@ -41,9 +41,9 @@ PRODUCT_COPY_FILES += \
     device/asus/Z010D/audio/mixer_paths_mtp.xml:system/etc/mixer_paths_mtp.xml
 
 #fuckin grelloc
-PRODUCT_COPY_FILES += \
-   device/asus/Z010D/hw/gralloc.msm8916.so:system/vendor/lib/hw/gralloc.msm8916.so \
-   device/asus/Z010D/hw/hwcomposer.msm8916.so:system/vendor/lib/hw/hwcomposer.msm8916.so
+#PRODUCT_COPY_FILES += \
+#   device/asus/Z010D/hw/gralloc.msm8916.so:system/vendor/lib/hw/gralloc.msm8916.so \
+#   device/asus/Z010D/hw/hwcomposer.msm8916.so:system/vendor/lib/hw/hwcomposer.msm8916.so
 
 
 # Properties
