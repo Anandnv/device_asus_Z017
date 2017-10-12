@@ -14,3 +14,6 @@ ro.min_freq_0=400000
  persist.service.adb.enable=1
  persist.service.debuggable=1
  persist.sys.usb.config=mtp,adb
+
+# camera non treble
+ camera.disable_treble=true
