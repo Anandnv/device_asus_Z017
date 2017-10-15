@@ -17,3 +17,4 @@ ro.min_freq_0=400000
 
 # camera non treble
  camera.disable_treble=true
+ persist.media.treble_omx=false
