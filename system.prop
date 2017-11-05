@@ -1,20 +1,6 @@
-# Display
-ro.sf.lcd_density=320
-
-# Set min freq
-ro.min_freq_0=400000
-
-# Optimal dex2oat threads for faster app installation
- ro.sys.fw.dex2oat_thread_count=6
-
-
-# debug
- ro.adb.secure=0
- ro.secure=0
- persist.service.adb.enable=1
- persist.service.debuggable=1
- persist.sys.usb.config=mtp,adb
-
-# camera non treble
- camera.disable_treble=true
- persist.media.treble_omx=false
+ro.build.model=ASUS_Z012DA
+ro.build.device=Z012
+ro.product.device=ASUS_Z012D
+ro.product.model=ASUS_Z012DA
+# for stock ROM
+ro.product.name=OPEN_Phone

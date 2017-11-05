@@ -1,2 +1,2 @@
-add_lunch_combo lineage_Z010D-userdebug
-add_lunch_combo aokp_Z010D-userdebug
+add_lunch_combo aim_Z012-userdebug
+add_lunch_combo aim_Z012-eng
