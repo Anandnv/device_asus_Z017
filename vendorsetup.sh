@@ -1,2 +1,2 @@
-add_lunch_combo aim_Z012-userdebug
-add_lunch_combo aim_Z012-eng
+add_lunch_combo aim_Z017-userdebug
+add_lunch_combo aim_Z017-eng
