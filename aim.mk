@@ -16,7 +16,7 @@ $(call inherit-product, device/asus/Z017/full_Z017.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Z017
-PRODUCT_NAME := lineage_Z017
+PRODUCT_NAME := aim_Z017
 PRODUCT_BRAND := asus
 PRODUCT_MANUFACTURER := asus
 
