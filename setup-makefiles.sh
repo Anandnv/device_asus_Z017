@@ -19,6 +19,7 @@ set -e
 
 # Required!
 DEVICE=Z017
+DEVICE1=Z012
 VENDOR=asus
 
 INITIAL_COPYRIGHT_YEAR=2016
@@ -29,7 +30,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 CM_ROOT="$MY_DIR"/../../..
 
-HELPER="$CM_ROOT"/vendor/aim/build/tools/extract_utils.sh
+HELPER="$CM_ROOT"/vendor/*/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -37,7 +38,7 @@ fi
 . "$HELPER"
 
 # Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT"
+setup_vendor "$DEVICE" "$DEVICE1" "$VENDOR" "$CM_ROOT"
 
 # Copyright headers and guards
 write_headers

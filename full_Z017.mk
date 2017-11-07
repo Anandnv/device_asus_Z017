@@ -21,4 +21,4 @@ $(call inherit-product, device/asus/Z017/device.mk)
 PRODUCT_DEVICE := Z017
 PRODUCT_NAME := full_Z017
 
-$(call inherit-product-if-exists, vendor/asus/Z017/Z017-vendor.mk)
+$(call inherit-product-if-exists, vendor/asus/msm8953-common/8953-common-vendor.mk)
