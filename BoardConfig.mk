@@ -15,11 +15,11 @@
 
 
 # inherit from common msm8916-common
- -include device/asus/msm8916-common/BoardConfigCommon.mk
+  -include device/asus/msm8953-common/BoardConfigCommon.mk
 
-$(call inherit-product, device/asus/msm8953-common/msm8953.mk)
+  -include vendor/asus/msm8953-common/BoardConfigVendor.mk
 
-DEVICE_PATH := device/asus/Z017
+ DEVICE_PATH := device/asus/Z017
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := Z017,ASUS_Z017D_1,Z012,ASUS_Z012D,ASUS_Z012,ASUS_Z017
@@ -29,4 +29,3 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Use Snapdragon LLVM, if available
 TARGET_USE_SDCLANG := true
-

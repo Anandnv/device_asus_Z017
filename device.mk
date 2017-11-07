@@ -17,8 +17,12 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+-include device/asus/msm8916-common/BoardConfigCommon.mk
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/asus/Z017/Z017-vendor.mk)
+
+# Inherit from msm8916-common
+$(call inherit-product, device/asus/msm8953-common/msm8953.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
