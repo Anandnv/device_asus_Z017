@@ -15,7 +15,7 @@
 
 
 # inherit from common msm8916-common
--include device/asus/msm8953-common/BoardConfigCommon.mk
+ -include device/asus/msm8916-common/BoardConfigCommon.mk
 
 $(call inherit-product, device/asus/msm8953-common/msm8953.mk)
 
