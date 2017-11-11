@@ -335,3 +335,16 @@ qcom.bluetooth.soc=smd
 ro.qualcomm.bt.hci_transport=smd
 ro.sys.sdcardfs=true
 media.camera.ts.monotonic=0
+
+debug.sf.latch_unsignaled=1
+debug.sf.enable_hwc_vds=1
+
+persist.media.treble_omx=false
+
+
+# debug
+ ro.adb.secure=0
+ ro.secure=0
+ persist.service.adb.enable=1
+ persist.service.debuggable=1
+ persist.sys.usb.config=mtp,adb
